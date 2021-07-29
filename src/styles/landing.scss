@@ -189,11 +189,13 @@
 @media only screen and (max-width: 768px) {
     .landing-page-container {
         .hero-container {
-            margin-top: 40px !important;
+            margin-top: 60px !important;
             padding: 20px !important;
             .title {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
                 width: 90%;
+                line-height: 2rem;
+                margin-bottom: 5px;
             }
             .subtitle {
                 font-size: 1rem;
@@ -209,7 +211,7 @@
         }
         .login-container {
             .login {
-                width: 90%;
+                width: 95%;
                 .text {
                     width: 70%;
                 }

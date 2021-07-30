@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Vigo",
+        "charges": "PKR 100 per excess km",
+        "monthlySave": "-15%",
+        "totalValue": "3002",
+        "average": "0.68%",
+        "review": 4.9,
+        "totalReview": "238"
+    },
+    {
+        "id": 2,
+        "name": "Mercedes",
+        "charges": "PKR 200 per excess km",
+        "monthlySave": "-30%",
+        "totalValue": "3100",
+        "average": "0.40%",
+        "review": 4.2,
+        "totalReview": "280"
+    },
+    {
+        "id": 3,
+        "name": "Lexus",
+        "charges": "PKR 150 per excess km",
+        "monthlySave": "-20%",
+        "totalValue": "300223",
+        "average": "0.23%",
+        "review": 4,
+        "totalReview": "548"
+    }
+]

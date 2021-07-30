@@ -1,0 +1,99 @@
+.credit-container {
+    position: relative;
+    top: 100px;
+    margin-bottom: 150px !important;
+    .header {
+        margin-top: 30px;
+        .upper-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .title {
+                font-size: 2rem;
+                font-weight: 500;
+                span {
+                    font-weight: 700;
+                }
+            }
+            .image-container {
+                img {
+                    width: 40px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .input-container {
+        background-color: #fafafa;
+        min-height: 140px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tab-container {
+        margin-top: 20px;
+        .tab-div {
+            border-bottom: 1px solid #002984;
+            .tab-item {
+                padding: 20px;
+                border-radius: 2px;
+                cursor: pointer;
+                font-weight: 600;
+                transition: 0.7s all;
+            }
+            .active {
+                background-color: #002984;
+                color: white;
+            }
+        }
+    }
+
+    .credit-card-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+        border: 1px solid rgb(218, 217, 217);
+        .card {
+            padding: 30px 20px;
+            width: 25%;
+            .further-icon {
+                min-width: 100px;
+                padding: 10px;
+                background-color: #012984;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                font-weight: 700;
+                cursor: pointer !important;
+            }
+        }
+        .second-card {
+            padding: 20px;
+            width: 25%;
+            .further-icon {
+                cursor: pointer !important;
+                min-width: 100px;
+                padding: 10px;
+                background-color: #012984;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .credit-container {
+        padding: 10px !important;
+    }
+}

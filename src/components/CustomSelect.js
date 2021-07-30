@@ -49,25 +49,42 @@ const useStyles = makeStyles((theme) => ({
     },
 }))
 
-export default function CustomizedSelects() {
+export default function CustomizedSelects({
+    selectItem,
+    getValue,
+    defaultValue,
+}) {
     const classes = useStyles()
-    const [age, setAge] = React.useState('')
+    const [value, setValue] = React.useState('')
     const handleChange = (event) => {
-        setAge(event.target.value)
+        setValue(event.target.value)
     }
+
+    React.useEffect(() => {
+        if (getValue) {
+            getValue(value)
+        }
+    }, [value])
+
+    React.useEffect(() => {
+        if (defaultValue) {
+            setValue(defaultValue)
+        }
+    }, [defaultValue])
+
     return (
         <>
             <FormControl className={classes.margin} fullWidth>
                 <NativeSelect
                     id="demo-customized-select-native"
-                    value={age}
+                    value={value}
                     onChange={handleChange}
                     input={<BootstrapInput />}
                 >
                     <option aria-label="None" value="" />
-                    <option value={10}>Ten</option>
-                    <option value={20}>Twenty</option>
-                    <option value={30}>Thirty</option>
+                    {selectItem?.map((item) => (
+                        <option value={item.value}>{item.name}</option>
+                    ))}
                 </NativeSelect>
             </FormControl>
         </>

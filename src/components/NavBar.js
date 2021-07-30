@@ -10,7 +10,9 @@ const NavBar = () => {
     return (
         <div className="navbar">
             <div className="logo">
-                <img src={LOGO} alt="logo" />
+                <a href="/">
+                    <img src={LOGO} alt="logo" />
+                </a>
             </div>
             <div className="menu">
                 <Badge badgeContent={2} color="secondary">
